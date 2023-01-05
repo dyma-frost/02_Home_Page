@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-top {
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c4b35;
+}
+.header-top .link {
+  height: 59px;
+}
+.header-top .link a {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+  text-decoration: none;
+}
+.header-top .header-email {
+  min-width: 246px;
+  padding-left: 35px;
+  background-image: url(./icons/Navbar/email\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  background-size: 25px 25px;
+  display: flex;
+  align-items: center;
+}
+.header-top .header-phone {
+  min-width: 95px;
+  padding-left: 35px;
+  margin-left: 30px;
+  background-image: url(./icons/Navbar/Vector-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  background-size: 25px 25px;
+  display: flex;
+  align-items: center;
+}
+.header-top .header-location {
+  min-width: 233px;
+  padding-left: 35px;
+  margin-left: 30px;
+  background-image: url(./icons/Navbar/location\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  background-size: 25px 25px;
+  display: flex;
+  align-items: center;
+}
+.header-top .header-dropdown {
+  height: 25px;
+  width: 66px;
+  background-image: url(./icons/Navbar/Down\ Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 50%;
+  background-size: 12px;
+  /* &:hover .dropdown-list {
+    display: block;
+  } */
+}
+.header-top .header-dropdown .header-dropdown-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+  position: relative;
+}
+.header-top .header-dropdown .dropdown-list {
+  background-color: #0c4b35;
+  width: 49px;
+  position: absolute;
+  display: none;
+  top: 41px;
+}
+.header-top .header-container {
+  width: 1418px;
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top .header-links {
+  display: flex;
+}
+
+.header-bottom {
+  height: 85px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-bottom .header-bottom-container {
+  height: 85px;
+  width: 1408px;
+  display: flex;
+  justify-content: space-between; /* ???????????????????????? */
+}
+.header-bottom .header-bottom-navbar-logo {
+  height: 85px;
+  background-image: url(./icons/Navbar/logo/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: right -2px top 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-bottom .header-bottom-navbar-logo img {
+  width: 120px;
+  height: 55px;
+}
+.header-bottom .header-bottom-navbar-menu {
+  margin-right: -250px;
+}
+.header-bottom .header-bottom-navbar-menu ul {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-bottom .header-bottom-navbar-menu ul li {
+  margin-right: 61px;
+  padding-top: 3px;
+  height: 20px;
+  justify-content: center;
+}
+.header-bottom .header-bottom-navbar-menu ul li:last-child a {
+  background-image: none;
+}
+.header-bottom .header-bottom-navbar-menu ul li a {
+  padding-right: 15px;
+  color: #212529;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-image: url(./icons/Navbar/Down\ Arrow\ black.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 12px;
+}
+.header-bottom .header-bottom-navbar-menu ul li a:hover {
+  color: #00730c;
+  background-image: url(./icons/Navbar/Down\ Arrow\ Green.svg);
+}
+.header-bottom .header-bottom-navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-bottom .header-bottom-navbar-button button {
+  color: white;
+  border: none;
+  background-color: #00730c;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  background-image: url(./icons/Navbar/Call\ Button\ Text\ &\ Icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101px 30px;
+  cursor: pointer;
+}
+.header-bottom .header-bottom-navbar-button button .mobile-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .header-top {
+    max-width: 480px;
+    height: 55px;
+  }
+  .header-top .header-container {
+    width: 480px;
+    height: 55px;
+  }
+  .header-top .link a {
+    display: none;
+  }
+  .header-top .link {
+    height: 55px;
+    min-width: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .header-top .header-email {
+    margin-left: 20px;
+    background-size: 20px 20px;
+  }
+  .header-top .header-phone {
+    margin-left: 20px;
+    background-size: 20px 20px;
+  }
+  .header-top .header-location {
+    margin-left: 20px;
+    background-size: 20px 20px;
+  }
+  .header-top .header-dropdown {
+    margin-right: 32px;
+    width: 55px;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    background-size: 7px;
+    background-position: top 50% right 5px;
+    margin-right: 23px;
+  }
+  .header-top .header-dropdown .header-dropdown-button {
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+  }
+  .header-bottom-container {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-bottom-container .header-bottom-navbar-logo {
+    background-size: 17.75px 14.47px;
+    background-position: right -2px top 24px;
+  }
+  .header-bottom-container .header-bottom-navbar-logo img {
+    width: 90px;
+    height: 40px;
+  }
+  .header-bottom-container .header-bottom-navbar-menu ul li {
+    display: none;
+  }
+  .header-bottom-container .header-bottom-navbar-button {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-bottom-container .header-bottom-navbar-button button {
+    width: 40px;
+    height: 34px;
+    border-radius: 10px;
+    background-image: url(./icons/Navbar/Call\ Button\(mobile\).svg);
+    background-repeat: no-repeat;
+  }
+  .header-bottom-container .header-bottom-navbar-button .mobile-menu {
+    display: block;
+    width: 30px;
+    height: 18.75px;
+    background-image: url(./icons/Navbar/Menu_1_.svg);
+    background-size: 30px 18px;
+  }
+}/*# sourceMappingURL=style.css.map */

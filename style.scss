@@ -1,0 +1,257 @@
+@import "./mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+// HEADER TOP
+
+.header-top {
+  height: 59px;
+  @include flex(center, center);
+  background-color: #0c4b35;
+  .link {
+    height: 59px;
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      line-height: 25px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .header-email {
+    min-width: 246px;
+    padding-left: 35px;
+    background-image: url(./icons/Navbar/email\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 45%;
+    background-size: 25px 25px;
+    display: flex;
+    align-items: center;
+  }
+  .header-phone {
+    min-width: 95px;
+    padding-left: 35px;
+    margin-left: 30px;
+    background-image: url(./icons/Navbar/Vector-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 0 45%;
+    background-size: 25px 25px;
+    display: flex;
+    align-items: center;
+  }
+  .header-location {
+    min-width: 233px;
+    padding-left: 35px;
+    margin-left: 30px;
+    background-image: url(./icons/Navbar/location\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 45%;
+    background-size: 25px 25px;
+    display: flex;
+    align-items: center;
+  }
+  .header-dropdown {
+    height: 25px;
+    width: 66px;
+    background-image: url(./icons/Navbar/Down\ Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 50%;
+    background-size: 12px;
+    /* &:hover .dropdown-list {
+      display: block;
+    } */
+    .header-dropdown-button {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      line-height: 25px;
+      color: white;
+      position: relative;
+    }
+    .dropdown-list {
+      background-color: #0c4b35;
+      width: 49px;
+      position: absolute;
+      display: none;
+      top: 41px;
+    }
+  }
+  .header-container {
+    width: 1418px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-links {
+    display: flex;
+  }
+}
+
+// HEADER BOTTOM
+.header-bottom {
+  height: 85px;
+  border-bottom: 1px solid black;
+  @include flex(center, center);
+
+  .header-bottom-container {
+    height: 85px;
+    width: 1408px;
+    display: flex;
+    justify-content: space-between; /* ???????????????????????? */
+  }
+  .header-bottom-navbar-logo {
+    height: 85px;
+    background-image: url(./icons/Navbar/logo/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: right -2px top 16px;
+    @include flex(center, center);
+    img {
+      width: 120px;
+      height: 55px;
+    }
+  }
+
+  .header-bottom-navbar-menu {
+    margin-right: -250px;
+    ul {
+      height: 85px;
+      @include flex(center, center);
+      li {
+        margin-right: 61px;
+        padding-top: 3px;
+        height: 20px;
+        justify-content: center;
+        &:last-child a{
+            background-image: none;
+        }
+        a {
+          padding-right: 15px;
+          color: #212529;
+          font-family: "Nunito", sans-serif;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          text-transform: capitalize;
+          text-decoration: none;
+          background-image: url(./icons/Navbar/Down\ Arrow\ black.svg);
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: 12px;
+          &:hover {
+            color: #00730c;
+            background-image: url(./icons/Navbar/Down\ Arrow\ Green.svg);
+          }
+        }
+      }
+    }
+  }
+  .header-bottom-navbar-button {
+    @include flex(center, space-between);
+    button {
+      color: white;
+      border: none;
+      background-color: #00730c;
+      width: 170px;
+      height: 50px;
+      border-radius: 5px;
+      font-family: "Nunito", sans-serif;
+      font-size: 18px;
+      background-image: url(./icons/Navbar/Call\ Button\ Text\ &\ Icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 101px 30px;
+      cursor: pointer;
+      .mobile-menu {
+        display: none;
+      }
+    }
+  }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media (max-width: 480px) {
+  // HEADER TOP
+  .header-top {
+    max-width: 480px;
+    height: 55px;
+    .header-container {
+      width: 480px;
+      height: 55px;
+    }
+    .link a {
+      display: none;
+    }
+    .link {
+      height: 55px;
+      min-width: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    .header-email {
+      margin-left: 20px;
+      background-size: 20px 20px;
+    }
+    .header-phone {
+      margin-left: 20px;
+      background-size: 20px 20px;
+    }
+    .header-location {
+      margin-left: 20px;
+      background-size: 20px 20px;
+    }
+    .header-dropdown {
+      margin-right: 32px;
+      width: 55px;
+      font-family: "Nunito", sans-serif;
+      font-size: 12px;
+      background-size: 7px;
+      background-position: top 50% right 5px;
+      margin-right: 23px;
+      .header-dropdown-button{
+        font-family: "Nunito", sans-serif;
+      font-size: 12px;
+      }
+    }
+  }
+  //   HEADER BOTTOM
+  .header-bottom-container {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .header-bottom-navbar-logo{
+        background-size: 17.75px 14.47px;
+        background-position: right -2px top 24px;
+        img{
+            width: 90px;
+            height: 40px;
+        }
+    }
+    .header-bottom-navbar-menu {
+      ul {
+        li {
+          display: none;
+        }
+      }
+    }
+    .header-bottom-navbar-button {
+        width: 100px;
+        @include flex(center, space-between);
+        button {
+        width: 40px;
+        height: 34px;
+        border-radius: 10px;
+        background-image: url(./icons/Navbar/Call\ Button\(mobile\).svg);
+        background-repeat: no-repeat;
+      }
+      .mobile-menu {
+            display: block;
+            width: 30px;
+            height: 18.75px;
+            background-image: url(./icons/Navbar/Menu_1_.svg);
+            background-size: 30px 18px;
+        }
+    }
+  }
+}
