@@ -3,6 +3,13 @@
     align-items: $align;
     justify-content: $justify;
 }
+@mixin border {
+    border: 1px solid black;
+}
+
+@mixin text-color1 {
+    color: #00730C
+}
 
 
 // @include flex(flex-start, space-between);
