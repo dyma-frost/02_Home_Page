@@ -508,15 +508,24 @@ main {
   // main
   main {
     .landscape-planting-services {
+      // background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+      height: 820px;
 
       // display: flex;
       .image-left-side {
-        display: none;
+        // display: none;
+        position: absolute;
+        left: 0;
+        top: 200px;
+        img{
+          width: 87px;
+        }
       }
 
       .container {
         display: flex;
         flex-direction: column;
+        
 
         // max-width: 445px;
         // padding-left: 15.5px;
@@ -527,6 +536,7 @@ main {
           width: 100%;
 
           .content {
+            margin-left: 20.5px;
 
             // max-width: 345px;
             .before-heading {
@@ -536,6 +546,7 @@ main {
               font-size: 14px;
               line-height: 19px;
               text-transform: lowercase;
+              margin-top: 170px;
             }
 
             .heading {
@@ -545,12 +556,13 @@ main {
               font-weight: 700;
               font-size: 28px;
               line-height: 38px;
+              margin-top: 10px;
             }
 
             .sub-title {
-              width: 445px;
+              max-width: 445px;
               height: 66px;
-              // margin-top: -100px;
+              margin-top: -60px;
               font-family: "Nunito";
               font-style: normal;
               font-weight: 400;
@@ -575,7 +587,7 @@ main {
 
               .button-grey {
                 background-image: url(./icons/Main1/Arrow-button-green.svg);
-                background-position: 90% 50%;
+                background-position: 90% 18%;
                 button {
                   font-family: 'Nunito';
                   font-style: normal;
@@ -583,14 +595,38 @@ main {
                   font-size: 14px;
                   line-height: 19px;
                   color: #00730C;
+                  margin-top: -70px;
                   
                 }
               }
             }
 
             .widgets {
+              position: relative;
+              margin-left: 150px;
+              .bubble{
+                width: 133px;
+                height: 32px;
+                background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+                border-radius: 32px;
+                font-size: 12px;
+                padding-top: 0;
+              }
+              .bubble-description{
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 14px;
+                position: absolute;
+                top: 4px;
+                margin-left: 50px;
+              }
               .widget3 {
                 display: none;
+              }
+              .widget2{
+                margin-left: 15px;
               }
               
             }

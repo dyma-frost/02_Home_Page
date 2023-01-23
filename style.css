@@ -418,8 +418,16 @@ main .landscape-planting-services .right-side .image-right-side img {
     background-image: url(./icons/Navbar/Menu_1_.svg);
     background-size: 30px 18px;
   }
+  main .landscape-planting-services {
+    height: 820px;
+  }
   main .landscape-planting-services .image-left-side {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 200px;
+  }
+  main .landscape-planting-services .image-left-side img {
+    width: 87px;
   }
   main .landscape-planting-services .container {
     display: flex;
@@ -429,6 +437,9 @@ main .landscape-planting-services .right-side .image-right-side img {
     margin-top: 200px;
     width: 100%;
   }
+  main .landscape-planting-services .container .left-side .content {
+    margin-left: 20.5px;
+  }
   main .landscape-planting-services .container .left-side .content .before-heading {
     font-family: "Nunito";
     font-style: normal;
@@ -436,6 +447,7 @@ main .landscape-planting-services .right-side .image-right-side img {
     font-size: 14px;
     line-height: 19px;
     text-transform: lowercase;
+    margin-top: 170px;
   }
   main .landscape-planting-services .container .left-side .content .heading {
     max-width: 479px;
@@ -444,10 +456,12 @@ main .landscape-planting-services .right-side .image-right-side img {
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
+    margin-top: 10px;
   }
   main .landscape-planting-services .container .left-side .content .sub-title {
-    width: 445px;
+    max-width: 445px;
     height: 66px;
+    margin-top: -60px;
     font-family: "Nunito";
     font-style: normal;
     font-weight: 400;
@@ -468,7 +482,7 @@ main .landscape-planting-services .right-side .image-right-side img {
   }
   main .landscape-planting-services .container .left-side .content .sub-buttons .button-grey {
     background-image: url(./icons/Main1/Arrow-button-green.svg);
-    background-position: 90% 50%;
+    background-position: 90% 18%;
   }
   main .landscape-planting-services .container .left-side .content .sub-buttons .button-grey button {
     font-family: "Nunito";
@@ -477,9 +491,35 @@ main .landscape-planting-services .right-side .image-right-side img {
     font-size: 14px;
     line-height: 19px;
     color: #00730C;
+    margin-top: -70px;
+  }
+  main .landscape-planting-services .container .left-side .content .widgets {
+    position: relative;
+    margin-left: 150px;
+  }
+  main .landscape-planting-services .container .left-side .content .widgets .bubble {
+    width: 133px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+    border-radius: 32px;
+    font-size: 12px;
+    padding-top: 0;
+  }
+  main .landscape-planting-services .container .left-side .content .widgets .bubble-description {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    position: absolute;
+    top: 4px;
+    margin-left: 50px;
   }
   main .landscape-planting-services .container .left-side .content .widgets .widget3 {
     display: none;
+  }
+  main .landscape-planting-services .container .left-side .content .widgets .widget2 {
+    margin-left: 15px;
   }
   main .landscape-planting-services .container .right-side .image-right-side {
     top: -54px;
