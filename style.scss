@@ -287,6 +287,7 @@ main {
 
             // @include border;
             .button-green {
+              z-index: 9;
               button {
                 background-image: url(./icons/Main1/Button.svg);
                 display: flex;
@@ -797,6 +798,7 @@ main {
                   height: 44px;
                   background-image: url(./icons/Main1/Button-get-a-quate\(mobile\).svg);
                   background-repeat: no-repeat;
+                  
                 }
               }
 

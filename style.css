@@ -252,6 +252,9 @@ main .landscape-planting-services .container .left-side .content .sub-buttons {
   width: 696px;
   height: 58px;
 }
+main .landscape-planting-services .container .left-side .content .sub-buttons .button-green {
+  z-index: 9;
+}
 main .landscape-planting-services .container .left-side .content .sub-buttons .button-green button {
   background-image: url(./icons/Main1/Button.svg);
   display: flex;
