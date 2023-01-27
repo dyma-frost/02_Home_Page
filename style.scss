@@ -200,6 +200,7 @@ main {
   .landscape-planting-services {
     width: 100%;
     height: 719px;
+    @include flex(center, center);
     // @include border;
     background: linear-gradient(79.58deg,
         rgba(0, 115, 12, 0.81) -39.14%,
@@ -214,8 +215,6 @@ main {
         top: 525px;
       }
     }
-
-    @include flex(center, center);
 
     .container {
       width: 1404px;
@@ -288,6 +287,7 @@ main {
             // @include border;
             .button-green {
               z-index: 9;
+
               button {
                 background-image: url(./icons/Main1/Button.svg);
                 display: flex;
@@ -611,19 +611,249 @@ main {
       }
     }
   }
+
+  .years-of-experience {
+    margin-top: 136px;
+    width: 100%;
+    @include flex(center, center);
+
+    .flower-image {
+      height: 350px;
+      width: 2300px;
+      left: -80px;
+      border-radius: 0px;
+      position: absolute;
+      background-image: url(./images/Main3/pngegg\ \(5\).svg);
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      width: 1392px;
+      @include flex(center, flex-start);
+      position: relative;
+      // @include border;
+
+      .left-side {
+        width: 696px;
+        position: relative;
+        // @include border;
+        // background-color: olive;
+
+        .green-background {
+          height: 706px;
+          width: 450px;
+          background: #00730C;
+          z-index: 0;
+          // position: relative;
+          position: absolute;
+        }
+
+        .large-image {
+          width: 601px;
+          height: 741px;
+          // background-image: url(./images/Main3/Img-large.svg);
+          // background-size: 601px 741px;
+          z-index: 9;
+          // position: absolute;
+          position: relative;
+          top: 36px;
+          left: 24px;
+
+          img {
+            width: 601px;
+            height: 741px;
+          }
+
+          .small-image {
+            width: 456px;
+            height: 356px;
+            // background-image: url(./images/Main3/Img-small.svg);
+            // background-size: 456px 356px;
+            z-index: 3;
+            position: absolute;
+            top: 537px;
+            left: 213px;
+
+            img {
+              width: 456px;
+              height: 356px;
+            }
+          }
+        }
+
+
+      }
+
+      .right-side {
+        // @include border;
+        width: 696px;
+        // background-color: red;
+        margin-top: 90px;
+
+        .heading {
+          width: 574px;
+          height: 122px;
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 45px;
+          line-height: 61px;
+          display: flex;
+          align-items: center;
+          color: #212529;
+
+          span {
+            color: #00730C;
+          }
+        }
+
+        .sub-title {
+          width: 672px;
+          height: 280px;
+          margin-top: 30px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          color: #676767;
+        }
+
+        .widgets {
+          margin-top: 50px;
+          @include flex (center, space-between);
+          flex-wrap: wrap;
+
+          [class*=widget] {
+            width: 330px;
+            height: 97px;
+            // @include border;
+            margin-right: 30px;
+            @include flex (center, space-between);
+            position: relative;
+
+            .bubble {
+              width: 67px;
+              height: 67px;
+              background: #00730C;
+              border-radius: 33px;
+              position: absolute;
+              left: 30px;
+
+              .icon {
+                width: 67px;
+                height: 67px;
+                background-image: url(./icons/Main3/Ellipse\ 26.svg);
+                background-repeat: no-repeat;
+                background-position-y: 14px;
+                background-position-x: 5px;
+                opacity: 0.8;
+              }
+            }
+
+            .bubble-description {
+              font-family: 'Nunito';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 33px;
+              text-transform: capitalize;
+              color: #212529;
+              position: absolute;
+              left: 127px;
+            }
+          }
+
+          .widget2,
+          .widget4 {
+            margin-right: 0;
+          }
+
+          .widget1 {
+            .bubble {
+              background-image: url(./icons/Main3/Our\ Mission.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+
+          .widget2 {
+            .bubble {
+              background-image: url(./icons/Main3/Our\ Vision.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+
+          .widget3 {
+            .bubble {
+              background-image: url(./icons/Main3/Support\ Team.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+
+          .widget4 {
+            .bubble {
+              background-image: url(./icons/Main3/Clients\ Trust.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 13px 35px;
+          gap: 10px;
+          margin-top: 50px;
+          width: 190px;
+          height: 50px;
+          background: #00730C;
+          border-radius: 5px;
+
+          a {
+            text-decoration: none;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
 }
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 @media (max-width: 480px) {
 
   // HEADER TOP
+  header{
+    min-width: 375px;
+  }
   .header-top {
-    max-width: 480px;
+    // max-width: 480px;
+    min-width: 375px;
     height: 55px;
 
     .header-container {
-      width: 480px;
+      // width: 375px;
+      width: 100%;
       height: 55px;
     }
 
@@ -671,6 +901,7 @@ main {
 
   //   HEADER BOTTOM
   .header-bottom {
+    min-width: 375px;
     height: 70px;
 
 
@@ -723,15 +954,13 @@ main {
   // main
   main {
     .landscape-planting-services {
-      // background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
       height: 820px;
 
-      // display: flex;
       .image-left-side {
-        // display: none;
         position: absolute;
-        left: 0;
+        left: -7px;
         top: 200px;
+        // min-width: 375px;
 
         img {
           width: 87px;
@@ -739,20 +968,19 @@ main {
       }
 
       .container {
+        min-width: 375px;
         display: flex;
         flex-direction: column;
 
-
-        // max-width: 445px;
-        // padding-left: 15.5px;
-        // padding-right: 14.5px;
         .left-side {
           // display: none;
           margin-top: 200px;
           width: 100%;
 
           .content {
-            margin-left: 20.5px;
+            // margin-left: 20.5px;
+            padding-left: 14.5px;
+            padding-right: 15.5px;
 
             // max-width: 345px;
             .before-heading {
@@ -766,7 +994,7 @@ main {
             }
 
             .heading {
-              max-width: 479px;
+              width: 100%;
               font-family: "Nunito";
               font-style: normal;
               font-weight: 700;
@@ -776,7 +1004,7 @@ main {
             }
 
             .sub-title {
-              max-width: 445px;
+              max-width: 100%;
               height: 66px;
               margin-top: -60px;
               font-family: "Nunito";
@@ -788,17 +1016,17 @@ main {
             }
 
             .sub-buttons {
-              max-width: 479px;
+              max-width: 100%;
               display: flex;
               flex-direction: column;
 
               .button-green {
+                // margin-left: 36px;
                 button {
                   width: 303px;
                   height: 44px;
                   background-image: url(./icons/Main1/Button-get-a-quate\(mobile\).svg);
                   background-repeat: no-repeat;
-                  
                 }
               }
 
@@ -814,7 +1042,6 @@ main {
                   line-height: 19px;
                   color: #00730C;
                   margin-top: -70px;
-
                 }
               }
             }
@@ -822,6 +1049,7 @@ main {
             .widgets {
               position: relative;
               margin-left: 150px;
+              justify-content: flex-end;
 
               .bubble {
                 width: 133px;
@@ -856,12 +1084,19 @@ main {
         }
 
         .right-side {
+          // position: relative;
           .image-right-side {
             // display: none;
             top: -54px;
             height: 0;
+            min-width: 375px;
+            min-height: 240px;
+            // position: relative;
 
             img {
+              position: absolute;
+              top: 0;
+              left: 0;
               width: 100%;
             }
           }
@@ -886,7 +1121,7 @@ main {
         }
 
         .sub-title {
-          max-width: 450px;
+          max-width: 344px;
           height: 110px;
           font-family: 'Nunito';
           font-style: normal;
@@ -906,16 +1141,16 @@ main {
             // @include border;
             display: flex;
             flex-direction: row;
-            max-width: 450px;
+            min-width: 345px;
             height: 116px;
             margin-right: 0;
-            
-            .image{
+
+            .image {
               width: 90px;
               background-size: 50px 50px;
               background-position: 50% 26%;
             }
-            
+
 
             .card-name {
               font-family: 'Nunito';
@@ -923,11 +1158,11 @@ main {
               font-weight: 700;
               font-size: 16px;
               line-height: 22px;
-              text-align:left;
+              text-align: left;
               padding-top: 20px;
               text-transform: capitalize;
               color: #212529;
-              
+
             }
 
             .card-title {
@@ -940,6 +1175,155 @@ main {
               text-align: left;
               color: #676767;
             }
+          }
+        }
+      }
+    }
+
+    .years-of-experience {
+      margin-top: 50px;
+      max-width: 479px;
+
+      .flower-image {
+        display: none;
+      }
+
+      .container {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+
+        .left-side {
+          width: 375px;
+
+          .green-background {
+            width: 188px;
+            height: 293px;
+            // right: 0;
+            left: 15px;
+            top: 0px;
+          }
+
+          .large-image {
+            left: 31px;
+            top: 16px;
+            height: 358px;
+            width: 291px;
+
+            img {
+              height: 358px;
+              width: 291px;
+              // border-radius: 0px;
+            }
+
+            .small-image {
+              height: 162px;
+              width: 241px;
+              top: 288px;
+              left: 91px;
+
+              img {
+                height: 162px;
+                width: 241px;
+                // left: 0px;
+                // top: 0px;
+                border-radius: 0px;
+              }
+            }
+          }
+        }
+
+        .right-side {
+          width: 375px;
+          margin-top: 122px;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          .heading {
+            width: 345px;
+            height: 76px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+          }
+
+          .sub-title {
+            margin-top: 15px;
+            width: 345px;
+            height: 330px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            // margin-left: 15px;
+            // margin-right: 15px;
+          }
+
+          .widgets {
+            width: 375px;
+            margin-top: 40px;
+            // margin-left: 15px;
+            // margin-right: 15px;
+            display: flex;
+
+            [class*=widget] {
+              width: 162px;
+              height: 94px;
+              margin-right: 20px;
+              // background: #FFFFFF;
+              box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+              border-radius: 5px;
+              // @include border;
+
+
+
+              .bubble {
+                width: 40px;
+                height: 40px;
+                background-size: 30px 30px;
+                left: 61px;
+                top: 15px;
+              }
+
+              .bubble-description {
+                width: 132px;
+                height: 19px;
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+                top: 60px;
+                left: 15px;
+              }
+            }
+
+            .widget3,
+            .widget4 {
+              margin-top: 15px;
+            }
+          }
+
+          .button {
+            width: 167px;
+            height: 40px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0;
+            margin-top: 50px;
+            margin-left: calc(50% - 83px);
           }
         }
       }
